@@ -1,0 +1,23 @@
+/*IU - WIDGET INSTAGRAM*/
+.iu_insta_widget {}
+.iu_insta_widget .erro {max-width: 200px; margin: 0 auto 10px; text-align: center;}
+.iu_insta_widget .erro a {font-weight: 700;}      
+
+/*duas colunas*/
+.iu_insta_widget .cols2 .item {width: 48.5%; float: left;}
+.iu_insta_widget .cols2 .item:nth-child(odd) {margin-right: 3%;}
+.iu_insta_widget .cols2 .item:nth-child(n+3) {margin-top: 3%;}
+
+/*três colunas*/
+.iu_insta_widget .cols3 .item {width: 32%; float: left;}
+.iu_insta_widget .cols3 .item:nth-child(3n+2) {margin-left: 2%; margin-right: 2%;}
+.iu_insta_widget .cols3 .item:nth-child(n+4) {margin-top: 2%;}
+
+/*padrão*/
+.iu_insta_widget .item {position: relative; background: #000}
+.iu_insta_widget .item img {width: 100%; height: auto; display: block; transition: .2s; backface-visibility: hidden;}
+.iu_insta_widget .item:before {content: '\f004'; font: 24px FontAwesome; color: #fff; position: absolute; left: 50%; top: 50%; margin: -12px 0 0 -12px; animation: pulseheart 0.35s infinite alternate; opacity: 0; transition: .3s; z-index: 5;}
+.iu_insta_widget .item:hover:before {opacity: 1;}
+.iu_insta_widget .item:hover img {opacity: .9;}
+
+@keyframes pulseheart {to {transform: scale(1.1)}}
