@@ -49,7 +49,7 @@ class iu_insta_widget extends WP_Widget {
   </p>
 
 	<p>
-    <label for="<?php echo $this->get_field_id( 'token' ); ?>">Access Token <?php if (isset($_POST) && $token == '') {echo '<span class="alert">*recomendado</span>';} ?></label>
+    <label for="<?php echo $this->get_field_id( 'token' ); ?>">Access Token <?php if (isset($_POST) && $token == '') {echo '<span class="alert">*obrigatório</span>';} ?></label>
     <input class="widefat" id="<?php echo $this->get_field_id( 'token' ); ?>" name="<?php echo $this->get_field_name( 'token' ); ?>" type="text" value="<?php echo esc_attr( $token ); ?>" placeholder="Token de acesso"/>
     <span><span class="dashicons dashicons-info"></span>Sem utilizar o Token a exibição das fotos pode parar de funcionar a qualquer momento. O Instagram agora exige um token de acesso para autorizar a exibição das fotos. Para gerar, você pode <a href="http://instagram.pixelunion.net/" target="_blank">acessar esse link</a> e clicar em <b>"Generate Access Token"</b>.</span>
   </p>
